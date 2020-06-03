@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  color: #2b2b2b;
+  font-size: .24rem;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+  position: relative;
+  background-color:#F5F5F5;
+  height: auto;
+}
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+nav,
+figure,
+menu,
+time,
+summary {
+  display: block;
+  font-size: .24rem;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+}
+
+p {
+  word-wrap: break-word;
+  word-break: normal;
+  font-size: .24rem;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+}
+
+form,
+ul,
+ol {
+  list-style-type: none;
+  font-size: .24rem;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+}
+
+ul,
+ol,
+li {
+  overflow: hidden;
+  font-size: .24rem;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+input,
+select {
+  vertical-align: middle;
+  font-size: .24rem;
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+}
+
+input,
+textarea,
+button {
+  font-family: "PingFang SC Regular", "Source Han Sans", "Source Han Sans";
+  font-weight: 500;
+  outline: none;
+  color:rgba(51,51,51,1);
+}
+textarea::placeholder {
+  color: #b2b2b2;
+}
+input::placeholder {
+  font-size: .28rem;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 0.5);
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.full {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%
+}
+
+.flex {
+  flex: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
