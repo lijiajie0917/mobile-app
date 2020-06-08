@@ -1,12 +1,7 @@
 <!-- 主页 -->
 <template>
   <div class="homepage">
-    <!-- <div class="signIn-btn" @click="signIn()">signIn</div> -->
-    <ul class="cleanList">
-      <li class="cleanLi">
-        <div></div>
-      </li>
-    </ul>
+    <div @click="gocleanChart()">前往清扫图表页</div>
   </div>
 </template>
 
@@ -17,12 +12,22 @@ export default {
   name: "homepage",
   data() {
     //这里存放数据
-    return {};
+    return {
+      cleanNum: 0
+    };
   },
   mounted() {
     this.signIn();
   },
   methods: {
+    gocleanChart() {
+      this.$router.push({
+        path: "cleanChart",
+        // query: {
+        //   id: 12
+        // }
+      });
+    },
     signIn() {
       // this.$axios
       //   .get(httpUrl.signIn, {})
@@ -34,13 +39,10 @@ export default {
       //     console.log("获取信息失败");
       //   });
       this.$axios
-        .post(
-          httpUrl.signIn,
-          {
-            'username': "guest",
-            'password' : "guest",
-          },
-        )
+        .post(httpUrl.signIn, {
+          username: "guest",
+          password: "guest"
+        })
         .then(res => {
           // console.log(res);
         })
@@ -57,21 +59,8 @@ export default {
 <style scoped>
 .homepage {
   width: 100%;
-  border-top: 0.1rem solid #ccc;
+  border-top: 0.01rem solid #ccc;
   padding-top: 0.3rem;
   position: relative;
-}
-.signIn-btn{
-  font-size: 0.46rem;
-  padding: 0 0.3rem;
-}
-.cleanList{
-  padding: 0 0.3rem;
-  width: 100%;
-}
-.cleanLi{
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 </style>

@@ -26,14 +26,14 @@ var router = new Router({
         title: '主页'
       }
     },
-    // {
-    //   path: `${project}/homepage`,
-    //   component: () =>
-    //     import("../views/homepage.vue"),
-    //   meta: {
-    //     title: '主页'
-    //   }
-    // },
+    {
+      path: `${project}/cleanChart`,
+      component: () =>
+        import("../views/cleanChart.vue"),
+      meta: {
+        title: '清扫图表'
+      }
+    },
     {
       path: "*",
       component: NotFoundComponent,
